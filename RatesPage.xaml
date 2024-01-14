@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMauiApp.RatesPage"
+             Title="Güncel Kurlar">
+    <VerticalStackLayout>
+        
+        <Grid RowDefinitions="Auto,Auto,Auto">
+            <Label Text="{Binding alis}" Grid.Row="1" Grid.Column="1"/>
+            <Label Text="{Binding satis}" Grid.Row="1" Grid.Column="2"/>
+            <Label Text="{Binding degisim}" Grid.Row="1" Grid.Column="3"/>
+            <Label Text="{Binding d_yon}" Grid.Row="1" Grid.Column="4"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

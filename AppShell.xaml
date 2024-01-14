@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MyMauiApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MyMauiApp">
+    <ShellContent Title="Giriş"
+                  Icon="home.png"
+                  ContentTemplate="{DataTemplate local:MainPage}"
+                  Route="MainPage"/>
+    <ShellContent Title="Kurlar"
+                  Icon="rates.png"
+                  ContentTemplate="{DataTemplate local:RatesPage}"
+                  Route="Rates"/>
+    <ShellContent Title="Haberler"
+                  Icon="news.png"
+                  ContentTemplate="{DataTemplate local:NewsPage}"
+                  Route="News"/>
+    <ShellContent Title="Hava Durumu"
+                  Icon="weather.png"
+                  ContentTemplate="{DataTemplate local:WeatherPage}" 
+                  Route="Weather"/>
+    <ShellContent Title="Yapılacaklar"
+              Icon="todolist.png"
+              ContentTemplate="{DataTemplate local:ToDoListPage}"
+                  Route="ToDoList"/>
+    <ShellContent Title="Ayarlar"
+              Icon="settings.png"
+              ContentTemplate="{DataTemplate local:SettingsPage}" 
+                  Route="Settings"/>
+    <!--<ShellContent Title="Yapılacaklar Detay"
+          Icon="todolist.png"
+          ContentTemplate="{DataTemplate local:ToDoListDetailPage}"
+          Route="ToDoListDetail"/>
+    <ShellContent Title="Haber Detay"
+          Icon="settings.png"
+          ContentTemplate="{DataTemplate local:NewsDetailPage}"
+          Route="NewsDetail"/>-->
+</Shell>
