@@ -57,13 +57,16 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\add.png" />
+	  <None Remove="Resources\Images\down.png" />
 	  <None Remove="Resources\Images\home.png" />
+	  <None Remove="Resources\Images\minus.png" />
 	  <None Remove="Resources\Images\news.png" />
 	  <None Remove="Resources\Images\rates.png" />
 	  <None Remove="Resources\Images\remove.png" />
 	  <None Remove="Resources\Images\settings.png" />
 	  <None Remove="Resources\Images\share.png" />
 	  <None Remove="Resources\Images\todolist.png" />
+	  <None Remove="Resources\Images\up.png" />
 	  <None Remove="Resources\Images\update.png" />
 	  <None Remove="Resources\Images\vesikalik.png" />
 	  <None Remove="Resources\Images\weather.png" />

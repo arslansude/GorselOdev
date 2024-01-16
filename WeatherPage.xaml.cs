@@ -12,8 +12,8 @@ public partial class WeatherPage : ContentPage
 		if (File.Exists(fileName))
 		{
 			string data = File.ReadAllText(fileName);
-			Sehirler = JsonSerializer.Deserialize<ObservableCollection<SehirHavaDurumu>>(data);
-		}
+            Sehirler = JsonSerializer.Deserialize<ObservableCollection<SehirHavaDurumu>>(data);
+        }
 		listCity.ItemsSource = Sehirler;
 	}
 	string fileName = Path.Combine(FileSystem.Current.AppDataDirectory, "hdata.json");
@@ -35,6 +35,7 @@ public partial class WeatherPage : ContentPage
     private void Yukle_Clicked(object sender, EventArgs e)
     {
 		refreshView.IsRefreshing = false;
+		
     }
     private async void SilClicked(object sender, EventArgs e)
     {

@@ -14,9 +14,9 @@
                     <Grid Margin="5" RowDefinitions="Auto,*" RowSpacing="10"
                           ColumnDefinitions="*,Auto">
                         <Label Grid.Row="0" Grid.Column="0" Text="{Binding Name}" FontSize="Title" VerticalOptions="Center"/>
-                        <ImageButton Grid.Row="0" Grid.Column="1" Source="remove.png" WidthRequest="20"
+                        <ImageButton Grid.Row="0" Grid.Column="1" Source="remove.png" WidthRequest="20" HeightRequest="20"
                                      CommandParameter="{Binding Name}" Clicked="SilClicked"/>
-                        <WebView Grid.Row="1" Grid.ColumnSpan="2" Source="{Binding Source}" BackgroundColor="White" WidthRequest="10"/>
+                        <WebView Grid.Row="1" Grid.ColumnSpan="2" Source="{Binding Source}" BackgroundColor="White" WidthRequest="100" HeightRequest="100"/>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

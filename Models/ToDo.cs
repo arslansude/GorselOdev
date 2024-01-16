@@ -8,5 +8,6 @@ namespace MyMauiApp.Models
 {
     class ToDo
     {
+        public string Not { get; set; }
     }
 }

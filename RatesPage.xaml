@@ -3,13 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyMauiApp.RatesPage"
              Title="Güncel Kurlar">
-    <VerticalStackLayout>
-        
-        <Grid RowDefinitions="Auto,Auto,Auto">
-            <Label Text="{Binding alis}" Grid.Row="1" Grid.Column="1"/>
-            <Label Text="{Binding satis}" Grid.Row="1" Grid.Column="2"/>
-            <Label Text="{Binding degisim}" Grid.Row="1" Grid.Column="3"/>
-            <Label Text="{Binding d_yon}" Grid.Row="1" Grid.Column="4"/>
-        </Grid>
-    </VerticalStackLayout>
+    <Grid RowDefinitions="Auto,*,Auto">
+        <Label Text="Güncel Döviz Kurları" TextColor="Bisque" FontSize="Large"/>
+        <CollectionView>
+            <CollectionView.HeaderTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*,*,*,*,*">
+                        <Label Grid.Column="0" Text="Adı"/>
+                        <Label Grid.Column="1" Text="Alış"/>
+                        <Label Grid.Column="2" Text="Satış"/>
+                        <Label Grid.Column="3" Text="Fark"/>
+                        <Label Grid.Column="4" Text="Yön"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.HeaderTemplate>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*,*,*,*,*" >
+                        <Label Grid.Column="0" Text="{Binding DName}"/>
+                        <Label Grid.Column="1" Text="{Binding FAlis}"/>
+                        <Label Grid.Column="2" Text="{Binding FSatis}"/>
+                        <Label Grid.Column="3" Text="{Binding Fark}"/>
+                        <Image Grid.Column="4" Source="{Binding Yon}" HeightRequest="20" WidthRequest="20"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <ImageButton Grid.Row="2" Margin="20" Clicked="Button_Clicked" Source="update.png" HeightRequest="5" WidthRequest="5"/>
+    </Grid>
 </ContentPage>

@@ -6,7 +6,7 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem IconImageSource="update.png" Clicked="LoadHaberler"></ToolbarItem>
     </ContentPage.ToolbarItems>
-    <RefreshView RefreshColor="Orange" Refreshing="LoadHaberler" x:Name="refreshView">
+    <RefreshView RefreshColor="Blue" Refreshing="LoadHaberler" x:Name="refreshView">
         <Grid RowDefinitions="Auto,*">
             <CollectionView Grid.Row="0" x:Name="lstKategoriler"
                             SelectionChanged="lstKategoriler_SelectionChanged"
@@ -20,7 +20,8 @@
                                     <Label
                                         Text="{Binding Baslik}"
                                         FontSize="Medium"/>
-                                </StackLayout>
+                                    
+                        </StackLayout>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
